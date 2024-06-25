@@ -1,0 +1,5 @@
+#supplier-name, #supplier-date{
+    display: flex;
+    flex-direction: column;
+
+}

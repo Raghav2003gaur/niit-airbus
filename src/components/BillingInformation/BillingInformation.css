@@ -1,0 +1,15 @@
+#payment-terms, #cancellation-terms{
+    display: flex;
+    flex-direction: column;
+ width: 80vh;
+}
+#note{
+    margin-top: 10px;
+    background: #FFD65C;
+    border-left: 3px solid;
+    border-radius: 2px;
+    padding: .5rem 1rem .5rem;
+    text-align: left;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+}

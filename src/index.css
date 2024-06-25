@@ -5,9 +5,58 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  float: left; /* Not typically needed in modern layouts */
+  width: 100vw;
+  /* padding: 2.5%; */
+  padding-right: 0px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%; /* Two columns: 1st column for steppar (30%), 2nd column for components (70%) */
+  gap: 20px; /* Gap between columns */
+  padding: 2.5%;
+  border-bottom: 1px solid #ddd;
+}
+
+.steppar {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+.steppar button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00a889;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.active {
+  background-color: #FFBF00 !important;
+}
+
+.steppar button:hover {
+  background-color: #0056b3;
+}
+
+.components {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allows scrolling if content exceeds height */
+  /* Adjust width to take full available space */
+  height: 100vh;
 }
